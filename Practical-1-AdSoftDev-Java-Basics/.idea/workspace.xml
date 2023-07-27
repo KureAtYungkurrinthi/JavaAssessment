@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76c32057-5b8c-4fa5-beda-ca70c6ea9a22" name="Changes" comment="updated the specification file and removed the code from the main method" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="solution" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SmTd6rvbhQopHSqJjDBt0pLeUc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "skeleton",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "T:/Teaching/COMP8741/pracs/Skeletons/Practical-1-AdSoftDev-Java-Basics",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3041145",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="T:\Teaching\COMP8741\pracs\solutions\Practical-1-AdSoftDev-Java-Basics\specifications" />
+      <recent name="T:\Teaching\COMP8741\2023\pracs\solutions\Practical-1-AdSoftDev-Java-Basics\specifications" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestWordList">
+    <configuration name="Checkpoint1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Checkpoint1" />
+      <module name="Practical1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Words" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Words" />
+      <module name="Practical1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practical1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestLine" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWordList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practical1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestWordList" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWordList.testEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practical1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestWordList" />
+      <option name="METHOD_NAME" value="testEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestWordList.testEmptyList" />
+        <item itemvalue="JUnit.TestWordList" />
+        <item itemvalue="JUnit.TestLine" />
+        <item itemvalue="Application.Words" />
+        <item itemvalue="Application.Checkpoint1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76c32057-5b8c-4fa5-beda-ca70c6ea9a22" name="Changes" comment="" />
+      <created>1689750841409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689750841409</updated>
+      <workItem from="1689750842823" duration="2834000" />
+      <workItem from="1689920558433" duration="12027000" />
+      <workItem from="1690179980659" duration="12000" />
+      <workItem from="1690250081006" duration="2451000" />
+      <workItem from="1690254256812" duration="14842000" />
+      <workItem from="1690283381977" duration="40000" />
+    </task>
+    <task id="LOCAL-00001" summary="First Commit to solution">
+      <option name="closed" value="true" />
+      <created>1689750922168</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689750922168</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Removed the package for ease of auto-marking">
+      <option name="closed" value="true" />
+      <created>1689921606507</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689921606507</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Tests for The Line class and Wordlist class.">
+      <option name="closed" value="true" />
+      <created>1689932741928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689932741928</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created the skeleton project">
+      <option name="closed" value="true" />
+      <created>1690077793951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690077793951</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated to include Checkpoint1 and Checkpoint2 for ease of auto testing with CodeGrade.">
+      <option name="closed" value="true" />
+      <created>1690260835727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690260835727</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added tests for the WordListComparator class&#10;This is to ensure that the students have created one.&#10;updated the specs to include the size of the WordList to enable correct testing of the addWord method">
+      <option name="closed" value="true" />
+      <created>1690264466177</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690264466177</updated>
+    </task>
+    <task id="LOCAL-00007" summary="restructured the tests to conform with the Checkpoints.&#10;Tested-by: Carl &lt;chm147@gmail.com&gt;&#10;Also tested in CodeGrade.">
+      <option name="closed" value="true" />
+      <created>1690282786054</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690282786054</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated the specification file and removed the code from the main method">
+      <option name="closed" value="true" />
+      <created>1690283113229</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690283113229</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="First Commit to solution" />
+    <MESSAGE value="Removed the package for ease of auto-marking" />
+    <MESSAGE value="Added Tests for The Line class and Wordlist class." />
+    <MESSAGE value="Created the skeleton project" />
+    <MESSAGE value="Updated to include Checkpoint1 and Checkpoint2 for ease of auto testing with CodeGrade." />
+    <MESSAGE value="added tests for the WordListComparator class&#10;This is to ensure that the students have created one.&#10;updated the specs to include the size of the WordList to enable correct testing of the addWord method" />
+    <MESSAGE value="restructured the tests to conform with the Checkpoints.&#10;Tested-by: Carl &lt;chm147@gmail.com&gt;&#10;Also tested in CodeGrade." />
+    <MESSAGE value="updated the specification file and removed the code from the main method" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the specification file and removed the code from the main method" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>
