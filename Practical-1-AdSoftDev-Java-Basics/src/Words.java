@@ -13,5 +13,6 @@ public class Words {
         JOptionPane.showMessageDialog(null, "Sorted word list = " + ws);
         JOptionPane.showMessageDialog(null, "First word = " + ws.getFirst());
         JOptionPane.showMessageDialog(null, "Last word = " + ws.getLast());
+        JOptionPane.showMessageDialog(null, "Average length = " + ws.getAvgLength());
     }
 }

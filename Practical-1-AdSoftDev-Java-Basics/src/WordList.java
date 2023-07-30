@@ -48,4 +48,11 @@ public class WordList {
     public void sortAlpha() {
         Collections.sort(theWordList);
     }
+
+    public double getAvgLength() {
+        double length = 0;
+        for (String word : theWordList)
+            length += word.length();
+        return length / size();
+    }
 }
