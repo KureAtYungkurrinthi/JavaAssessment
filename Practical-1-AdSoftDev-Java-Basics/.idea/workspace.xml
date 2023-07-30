@@ -7,6 +7,7 @@
     <list default="true" id="76c32057-5b8c-4fa5-beda-ca70c6ea9a22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Words.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +58,14 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "skeleton",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "T:/Teaching/COMP8741/pracs/Skeletons/Practical-1-AdSoftDev-Java-Basics",
+    "last_opened_file_path": "/usr/lib/jvm/java-17-openjdk-amd64/docs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3041145",
     "settings.editor.selected.configurable": "editor.preferences.folding",
     "vcs.patch.to.clipboard": "true",
@@ -235,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690692520236</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="returns the average length">
+      <option name="closed" value="true" />
+      <created>1690693771053</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690693771053</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +279,9 @@
     <MESSAGE value="Checkpoint2 and Line" />
     <MESSAGE value="Checkpoint 3" />
     <MESSAGE value="Checkpoint 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checkpoint 4" />
+    <MESSAGE value="get" />
+    <MESSAGE value="returns the average length" />
+    <option name="LAST_COMMIT_MESSAGE" value="returns the average length" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

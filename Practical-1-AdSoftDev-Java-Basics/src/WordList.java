@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class WordList {
     private final ArrayList<String> theWordList = new ArrayList<>();
@@ -54,5 +55,16 @@ public class WordList {
         for (String word : theWordList)
             length += word.length();
         return length / size();
+    }
+
+    public void sortByLength() {
+        Collections.sort(theWordList, new WordListComparator());
+    }
+}
+
+class WordListComparator implements Comparator<String> {
+    @Override
+    public int compare(String s1, String s2) {
+        return Integer.compare(s1.length(), s2.length());
     }
 }
