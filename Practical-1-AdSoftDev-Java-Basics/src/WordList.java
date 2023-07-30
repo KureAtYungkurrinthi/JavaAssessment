@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class WordList {
     private final ArrayList<String> theWordList = new ArrayList<>();
@@ -42,5 +43,9 @@ public class WordList {
      */
     public int size() {
         return theWordList.size();
+    }
+
+    public void sortAlpha() {
+        Collections.sort(theWordList);
     }
 }

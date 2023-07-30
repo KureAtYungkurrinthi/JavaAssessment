@@ -9,6 +9,8 @@ public class Words {
             in = JOptionPane.showInputDialog("Click cancel to end or enter a word and click OK");
         }
         JOptionPane.showMessageDialog(null, "Word list = " + ws);
+        ws.sortAlpha();
+        JOptionPane.showMessageDialog(null, "Sorted word list = " + ws);
         JOptionPane.showMessageDialog(null, "First word = " + ws.getFirst());
         JOptionPane.showMessageDialog(null, "Last word = " + ws.getLast());
     }
