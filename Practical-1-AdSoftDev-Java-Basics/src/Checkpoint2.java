@@ -1,23 +1,29 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Checkpoint2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String msg1, msg2, msg3;
-        int counter = 0;
 
-        counter++;
-        System.out.println(counter + ": Enter a line");
-        msg1 = in.nextLine();
+        ArrayList<Line> lineStore = new ArrayList<>();
+        boolean hasNextLine = true;
+        int counter = 1;
 
-        counter++;
-        System.out.println(counter + ": Enter another line");
-        msg2 = in.nextLine();
+        while (hasNextLine) {
+            System.out.println(counter + ": Enter a line");
+            String text = in.nextLine();
+            if (text.equals("STOP"))
+                hasNextLine = false;
+            else {
+                Line msg = new Line();
+                msg.setText(text);
+                msg.setSeqNum(counter++);
+                lineStore.add(msg);
+            }
+        }
 
-        counter++;
-        System.out.println(counter + ": Enter the last line");
-        msg3 = in.nextLine();
-
-        System.out.println(msg3 + ", " + msg2 + ", " + msg1);
+        for (int i = 1; i <= lineStore.size(); i++) {
+            System.out.println(lineStore.get(lineStore.size() - i));
+        }
     }
 }

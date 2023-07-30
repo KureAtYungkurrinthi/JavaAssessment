@@ -6,15 +6,20 @@ public class Line {
         return text;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public int getSeqNum() {
         return seqNum;
     }
 
+    public void setText(String text) {
+        this.text = text;
+    }
+
     public void setSeqNum(int seqNum) {
         this.seqNum = seqNum;
+    }
+
+    @Override
+    public String toString() {
+        return seqNum + ": " + text;
     }
 }
