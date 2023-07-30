@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Checkpoint1 {
+public class Checkpoint2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String msg1, msg2, msg3;
