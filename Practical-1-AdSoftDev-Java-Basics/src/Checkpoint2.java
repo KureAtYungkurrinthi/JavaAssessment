@@ -12,7 +12,7 @@ public class Checkpoint2 {
         while (hasNextLine) {
             System.out.println(counter + ": Enter a line");
             String text = in.nextLine();
-            if (text.equals("STOP"))
+            if (text.equalsIgnoreCase("STOP"))
                 hasNextLine = false;
             else {
                 Line msg = new Line();
