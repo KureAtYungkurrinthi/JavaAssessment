@@ -20,7 +20,10 @@ public class WordList {
      * @return the first word of the list, or "-" if the list is empty
      */
     public String getFirst() {
-        return theWordList.get(0);
+        if (size() == 0)
+            return "-";
+        else
+            return theWordList.get(0);
     }
 
     /**
@@ -29,7 +32,10 @@ public class WordList {
      * @return the last word of the list, or "-" if the list is empty
      */
     public String getLast() {
-        return theWordList.get(size() - 1);
+        if (size() == 0)
+            return "-";
+        else
+            return theWordList.get(size() - 1);
     }
 
     /**
