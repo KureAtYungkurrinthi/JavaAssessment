@@ -20,10 +20,9 @@ public class WordList {
      * @return the first word of the list, or "-" if the list is empty
      */
     public String getFirst() {
-        if (size() == 0)
-            return "-";
-        else
-            return theWordList.get(0);
+        int size = size();
+        if (size == 0) return "-";
+        return theWordList.get(0);
     }
 
     /**
@@ -32,10 +31,9 @@ public class WordList {
      * @return the last word of the list, or "-" if the list is empty
      */
     public String getLast() {
-        if (size() == 0)
-            return "-";
-        else
-            return theWordList.get(size() - 1);
+        int size = size();
+        if (size == 0) return "-";
+        return theWordList.get(size - 1);
     }
 
     /**
@@ -57,9 +55,12 @@ public class WordList {
     }
 
     public double getAvgLength() {
+        if (size() == 0) return 0;
+
         double length = 0;
-        for (String word : theWordList)
+        for (String word : theWordList) {
             length += word.length();
+        }
         return length / size();
     }
 
@@ -71,6 +72,6 @@ public class WordList {
 class WordListComparator implements Comparator<String> {
     @Override
     public int compare(String s1, String s2) {
-        return Integer.compare(s1.length(), s2.length());
+        return s1.length() - s2.length();
     }
 }

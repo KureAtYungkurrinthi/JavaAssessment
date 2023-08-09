@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="76c32057-5b8c-4fa5-beda-ca70c6ea9a22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3041145&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vcs.patch.to.clipboard&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -238,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690695589411</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="workaround for checkpoint 2 &amp; 3 auto test">
+      <option name="closed" value="true" />
+      <created>1690956941005</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690956941006</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +283,8 @@
     <MESSAGE value="get" />
     <MESSAGE value="returns the average length" />
     <MESSAGE value="sorts the list into ascending order based on the length of words" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorts the list into ascending order based on the length of words" />
+    <MESSAGE value="workaround for checkpoint 2 &amp; 3 auto test" />
+    <option name="LAST_COMMIT_MESSAGE" value="workaround for checkpoint 2 &amp; 3 auto test" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
