@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5867bb09-0902-4ac3-9af8-f50280b72ad8" name="Default Changelist" comment="first commit to skeleton after removing the tests and extraneous classes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="solution" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="1Y5sELsPX7Ld9h4GGOZgh64vHnl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "skeleton",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "T:/Teaching/COMP8741/pracs/Skeletons/Practical02-AddSoftDev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3041145",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="T:\Teaching\COMP8741\pracs\alternatives\Practical02-AddSoftDev-DogRegister" />
+      <recent name="T:\Teaching\se3\2022\practicals" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DogBreeder">
+    <configuration name="BracketTester" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="BracketTester" />
+      <module name="Practical2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/assets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DogBreeder" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="DogBreeder" />
+      <module name="Practical2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DogBreeder" />
+      <item itemvalue="Application.BracketTester" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5867bb09-0902-4ac3-9af8-f50280b72ad8" name="Default Changelist" comment="" />
+      <created>1582243677277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582243677277</updated>
+      <workItem from="1585814453893" duration="1138000" />
+      <workItem from="1585865784975" duration="1801000" />
+      <workItem from="1647228437851" duration="346000" />
+      <workItem from="1690450038787" duration="125000" />
+      <workItem from="1690450175505" duration="3481000" />
+      <workItem from="1690454149797" duration="769000" />
+      <workItem from="1690454934432" duration="5246000" />
+      <workItem from="1690762944167" duration="4573000" />
+      <workItem from="1690875306016" duration="14448000" />
+      <workItem from="1691382048139" duration="102000" />
+      <workItem from="1691405176258" duration="709000" />
+      <workItem from="1691480945851" duration="2958000" />
+      <workItem from="1691569588954" duration="2527000" />
+      <workItem from="1691581234968" duration="409000" />
+      <workItem from="1691581893607" duration="47000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit to master - still have Task 2, 4, and 5 to write tests for.">
+      <option name="closed" value="true" />
+      <created>1691060890451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691060890451</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit to master - still have Task 2, 4, and 5 to write tests for.">
+      <option name="closed" value="true" />
+      <created>1691060911300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691060911300</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first commit to master - still have Task 4 and 5 to write tests for.&#10;The rest is fine.">
+      <option name="closed" value="true" />
+      <created>1691306716960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691306716960</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first commit to skeleton after removing the tests and extraneous classes">
+      <option name="closed" value="true" />
+      <created>1691307031982</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691307031982</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="first commit to master - still have Task 2, 4, and 5 to write tests for." />
+    <MESSAGE value="first commit to master - still have Task 4 and 5 to write tests for.&#10;The rest is fine." />
+    <MESSAGE value="first commit to skeleton after removing the tests and extraneous classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit to skeleton after removing the tests and extraneous classes" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>
