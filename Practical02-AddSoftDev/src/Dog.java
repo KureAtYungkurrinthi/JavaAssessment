@@ -2,21 +2,39 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Dog {
+    private static int count = 0;
+    private final Set<String> owners = new HashSet<>();
+    private final int seqNum;
     private String name;
     private String dogBreed;
     private int regNum;
-    private Set<String> owners = new HashSet<>();
 
     public Dog() {
+        count++;
+        seqNum = count;
         name = "unknown";
         dogBreed = "unknown";
         regNum = -1;
     }
 
     public Dog(String name, String dogBreed, int regNum) {
+        count++;
+        seqNum = count;
         this.name = name;
         this.dogBreed = dogBreed;
         this.regNum = regNum;
+    }
+
+    public static void printTotal() {
+        System.out.println("Total number of dogs bred = " + count);
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public int getSeqNum() {
+        return seqNum;
     }
 
     public String getName() {
@@ -53,6 +71,6 @@ public class Dog {
 
     @Override
     public String toString() {
-        return "Dog " + name + ", Breed = " + dogBreed + ", #owners = " + owners.size() + ", Registration #: " + regNum;
+        return "Dog " + name + ", Breed = " + dogBreed + ", #owners = " + owners.size() + ", Registration #: " + regNum + ", Sequence #: " + seqNum;
     }
 }

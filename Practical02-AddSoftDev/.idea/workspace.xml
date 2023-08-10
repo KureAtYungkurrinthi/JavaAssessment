@@ -179,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691701964561</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Part 1 Task 2 done.">
+      <option name="closed" value="true" />
+      <created>1691706349332</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691706349332</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +214,8 @@
     <MESSAGE value="first commit to master - still have Task 4 and 5 to write tests for.&#10;The rest is fine." />
     <MESSAGE value="first commit to skeleton after removing the tests and extraneous classes" />
     <MESSAGE value="Practical 2 Part 1 Task 1: first commit to skeleton after removing the tests and extraneous classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practical 2 Part 1 Task 1: first commit to skeleton after removing the tests and extraneous classes" />
+    <MESSAGE value="Part 1 Task 2 done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 1 Task 2 done." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

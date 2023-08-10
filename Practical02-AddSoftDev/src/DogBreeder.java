@@ -4,6 +4,7 @@ public class DogBreeder {
      */
     public static void main(String[] args) {
         System.out.println("Starting dog application");
+        Dog.printTotal();
 
         Dog mydog1 = new Dog();
         Dog mydog2 = new Dog("Fluffy", "Poodle", 3496);
@@ -15,8 +16,8 @@ public class DogBreeder {
         mydog1.addOwner("Bob");
         mydog2.addOwner("Martha");
         System.out.println(mydog1);
-        System.out.println(mydog2);
         System.out.println(mydog1.getName());
         System.out.println(mydog2.getName());
+        Dog.printTotal();
     }
 }
