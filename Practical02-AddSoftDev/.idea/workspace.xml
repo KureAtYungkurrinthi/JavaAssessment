@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5867bb09-0902-4ac3-9af8-f50280b72ad8" name="Default Changelist" comment="first commit to skeleton after removing the tests and extraneous classes">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5867bb09-0902-4ac3-9af8-f50280b72ad8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DogBreeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DogBreeder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691307031982</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Practical 2 Part 1 Task 1: first commit to skeleton after removing the tests and extraneous classes">
+      <option name="closed" value="true" />
+      <created>1691701964561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691701964561</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +205,8 @@
     <MESSAGE value="first commit to master - still have Task 2, 4, and 5 to write tests for." />
     <MESSAGE value="first commit to master - still have Task 4 and 5 to write tests for.&#10;The rest is fine." />
     <MESSAGE value="first commit to skeleton after removing the tests and extraneous classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit to skeleton after removing the tests and extraneous classes" />
+    <MESSAGE value="Practical 2 Part 1 Task 1: first commit to skeleton after removing the tests and extraneous classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practical 2 Part 1 Task 1: first commit to skeleton after removing the tests and extraneous classes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

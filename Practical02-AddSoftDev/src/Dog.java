@@ -1,7 +1,11 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class Dog {
     private String name;
     private String dogBreed;
     private int regNum;
+    private Set<String> owners = new HashSet<>();
 
     public Dog() {
         name = "unknown";
@@ -39,8 +43,16 @@ public class Dog {
         this.regNum = regNum;
     }
 
+    public Set<String> getOwners() {
+        return owners;
+    }
+
+    public void addOwner(String owner) {
+        owners.add(owner);
+    }
+
     @Override
     public String toString() {
-        return "Dog " + name + ", Breed = " + dogBreed + ", Registration #: " + regNum;
+        return "Dog " + name + ", Breed = " + dogBreed + ", #owners = " + owners.size() + ", Registration #: " + regNum;
     }
 }
