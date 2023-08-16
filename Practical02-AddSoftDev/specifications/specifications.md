@@ -13,7 +13,7 @@ Create the following class.
 	4. a method called `toString` that has no formal parameters and returns the dog’s name, breed and registration
 	   number, as a String, in the following format: <br>
 
-   <pre><code>Dog _name_, Breed = _dogBreed_, Registration #: _regNum_</code></pre>
+   <pre><code>Dog <i>name</i>, Breed = <i>dogBreed</i>, Registration #: <i>regNum</i></code></pre>
 
    where the words in _italics_ should be replaced with the values of the corresponding instance variables.
 
@@ -147,7 +147,8 @@ Create the following class.
    public void addDog(Dog dog)     // Adds a dog to the register
    public Dog getDog(int regNum) // Returns the Dog with a registration number of  
    // regNum, if it exists, otherwise returns null.
-   public String toString()        // The usual toString method.
+   public String toString()        // The usual toString method.  
+   public List<Dog> getRegister() // Returns the current dog register
    ```
 2. Modify the main method so that it creates a `DogRegister` object, adds lots of dogs to it and demonstrates that your
    methods are correct. That is, add statements that call the methods and outputs the resulting changes, so you can
@@ -157,7 +158,7 @@ Create the following class.
    ```java
      public Dog deleteDog(int regNum)
      // Removes, and returns, the Dog with a registration number of regNum
-     // If there is no Dog with that sequence number, null is returned.
+     // If there is no Dog with that registration number, null is returned.
      // Include thorough testing code in the main method.
    ```
 
@@ -193,9 +194,8 @@ Create the following class.
    **Interface** (**_that you need to create_**) that contains a single (abstract) method called `satisfies` that takes
    a
    `Dog` as a parameter and returns true or false (a `boolean`). The Dogs returned from `getByCondition` are those for
-   which the method returns **true** when it is applied to them. You will also need to create a class that **implements
-   **
-   the `DogCondition` interface to test your method. For example
+   which the method returns **true** when it is applied to them. You will also need to create a class that  
+   **implements**  the `DogCondition` interface to test your method. For example
 
    ```java
      DogRegister dg = new DogRegister();
@@ -238,11 +238,11 @@ Create the following class.
 	1. a single `private` instance variable `stack` of type
 	   `Stack<Character>` which is initialised it to new `Stack<>()`
 	2. a single method `check` that takes a single formal parameter of type `String` and returns a `boolean`, i.e.
-	    ```java
-	   public boolean check(String text) {
-			return false; 
-	   }
-	   ```
+   ```java
+     public boolean check(String text) {
+        return false; 
+     }
+   ```
 2. Modify the main method of `BracketTester` so that it:
 	1. Prints the message "Starting Bracket Checker application"
 	2. Defines a variable called `checker` of type `BracketChecker`, initialised to a new `BracketChecker` object.
@@ -257,7 +257,7 @@ Create the following class.
    Run the project. The following output should be produced (example input, **{{}}** is shown <mark>highlighted</mark>
    below):
 
-    <pre><code>	Starting Bracket Checker application
+    <pre><code>Starting Bracket Checker application
     <mark>{{}}</mark>
     Syntax Error
      </code></pre>
@@ -430,13 +430,13 @@ To make the BracketChecker class more general we can check for more than just '{
 		 char top = s.peek();
 		 if (top != opening[cli]) {
 		 // ERROR, not matching brackets
-	     }
+		 }
 	   ```
 2. Add to the main method two variables that represent the opening and closing brackets sets, e.g.
 
     ```java
-    char[] opening = {'{','(', '['};
-    char[] closing = {'}',')', ']'};
+    char[] opening = {'{','(', '[', '<'};
+    char[] closing = {'}',')', ']', '>'};
     ```
 
    Pass these new variables to the new `BracketChecker` constructor, e.g.
@@ -449,18 +449,20 @@ To make the BracketChecker class more general we can check for more than just '{
     Syntax Correct 
     {{()}} 
     Syntax Correct 
-    {}} | 
+    {}} 
+      | 
     Syntax Error at position 2 
     {} 
     Syntax Correct
     ({})
     Syntax Correct 
     {)
-    | Syntax Error at position 1 
+     | 
+    Syntax Error at position 1 
     Exiting Checker
-    </code>></pre>
+    </code></pre>
 4. Add more bracket combinations and more lines to the file to test out your application. The file `brackets03.txt`,
-   available in the assets folder, contains '{', '(' and '[' combinations for `opening` and `closing`.
+   available in the assets folder, contains '{', '(', '<', and '[' combinations for `opening` and `closing`.
 
 ### Task 4
 
