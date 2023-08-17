@@ -19,5 +19,13 @@ public class DogBreeder {
         System.out.println(mydog1.getName());
         System.out.println(mydog2.getName());
         Dog.printTotal();
+
+        DogRegister dogRegister = new DogRegister();
+        System.out.println(dogRegister);
+        System.out.println(dogRegister.getDog(3496));
+        dogRegister.addDog(mydog1);
+        dogRegister.addDog(mydog2);
+        System.out.println(dogRegister);
+        System.out.println(dogRegister.getDog(3496));
     }
 }
