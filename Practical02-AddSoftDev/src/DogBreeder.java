@@ -64,6 +64,11 @@ public class DogBreeder {
         register.GroupByBreed();
         System.out.println("\nRegister after grouping: \n" + register);
 
-
+        // Testing DogCondition interface
+        register.addDog(new Dog("Barry", "Corgi", 105));
+        register.addDog(new Dog("Barry", "Pug", 106));
+        DogCondition dc = new DogsNamedBarry(); // satisfies is true for dogs named Barry
+        Collection<Dog> dogsNamedBarry = register.getByCondition(dc);
+        System.out.println("\nDogs with names 'Barry': " + dogsNamedBarry);
     }
 }

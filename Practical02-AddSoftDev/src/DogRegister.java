@@ -50,6 +50,13 @@ public class DogRegister {
         dogRegister.sort(new dogRegisterComparator());
     }
 
+    public Collection<Dog> getByCondition(DogCondition c) {
+        List<Dog> output = new ArrayList<>();
+        for (Dog dog : dogRegister)
+            if (c.satisfies(dog)) output.add(dog);
+        return output;
+    }
+
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
