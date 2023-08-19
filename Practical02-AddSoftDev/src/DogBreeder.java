@@ -1,3 +1,5 @@
+import java.util.Collection;
+
 public class DogBreeder {
     /**
      * @param args the command line arguments
@@ -11,6 +13,7 @@ public class DogBreeder {
         System.out.println(mydog1);
         System.out.println(mydog2);
 
+        // Task 2
         mydog1.setName("Fido");
         mydog1.addOwner("Anne");
         mydog1.addOwner("Bob");
@@ -20,12 +23,41 @@ public class DogBreeder {
         System.out.println(mydog2.getName());
         Dog.printTotal();
 
-        DogRegister dogRegister = new DogRegister();
-        System.out.println(dogRegister);
-        System.out.println(dogRegister.getDog(3496));
-        dogRegister.addDog(mydog1);
-        dogRegister.addDog(mydog2);
-        System.out.println(dogRegister);
-        System.out.println(dogRegister.getDog(3496));
+        // Task 4
+        System.out.println("Starting dog register");
+
+        // Modify the main method so that it creates a DogRegister object,
+        // adds lots of dogs to it and demonstrates that your methods are correct.
+        DogRegister register = new DogRegister();
+        Dog mydog3 = new Dog("Charlie", "Siberian Husky", 101);
+        Dog mydog4 = new Dog("Bella", "Tugou", 102);
+        Dog mydog5 = new Dog("Luna", "Corgi", 103);
+        Dog mydog6 = new Dog("Lucy", "Shiba Inu", 104);
+        register.addDog(mydog1);
+        register.addDog(mydog2);
+        register.addDog(mydog3);
+        register.addDog(mydog4);
+        register.addDog(mydog5);
+        register.addDog(mydog6);
+        System.out.println(register);
+        Dog.printTotal();
+
+        // Testing retrieving a dog
+        Dog retrievedDog = register.getDog(101);
+        System.out.println("Retrieved dog: " + retrievedDog);
+
+        // Testing deletion
+        Dog deletedDog = register.deleteDog(102);
+        System.out.println("Deleted dog: " + deletedDog);
+        System.out.println("Register after deletion: \n" + register);
+
+        // Testing deletion when no Dog has that registration number
+        Dog nonExistedDog = register.deleteDog(111);
+        System.out.println("Trying to delete non-existed dog: " + nonExistedDog);
+
+        // Testing getting dogs with a specific name sequence
+        Collection<Dog> dogsWithName = register.getDogsWhoseNameContains("Lu");
+        System.out.println("Dogs with names containing 'Lu': " + dogsWithName);
+
     }
 }
