@@ -235,9 +235,11 @@ of brackets in a file, a Stack can be used, and the following algorithm implemen
 Create the following class.
 
 1. `BracketChecker` - this class contains:
-	1. a single `private` instance variable `stack` of type
-	   `Stack<Character>` which is initialised it to new `Stack<>()`
-	2. a single method `check` that takes a single formal parameter of type `String` and returns a `boolean`, i.e.
+	1. an instance variable `stack` of type `Stack<Character>` which is initialised it to new `Stack<>()`
+	2. an instance variable to store the opening bracket types, an array of char's `char[] opening`
+	3. an instance variable to store the closing bracket types, an array of char's `char[] closing`
+	4. add a constructor that sets the values of `opening` and `closing`
+	5. a single method `check` that takes a single formal parameter of type `String` and returns a `boolean`, i.e.
    ```java
      public boolean check(String text) {
         return false; 
@@ -245,12 +247,14 @@ Create the following class.
    ```
 2. Modify the main method of `BracketTester` so that it:
 	1. Prints the message "Starting Bracket Checker application"
-	2. Defines a variable called `checker` of type `BracketChecker`, initialised to a new `BracketChecker` object.
-	3. Defines a variable called `in` of type `Scanner`, initialised to new `Scanner(
+	2. Declares a `char` array named `opening` that contains a single `char` -> '{', and a corresponding `char` array
+	   named `closing` that contains a single `char` -> '}'
+	3. Defines a variable called `checker` of type `BracketChecker`, initialised to a new `BracketChecker` object.
+	4. Defines a variable called `in` of type `Scanner`, initialised to new `Scanner(
 	   System.in)`. This will allow input from the keyboard.
-	4. Calls `in.nextLine()` and passes the result to the `check` method of
+	5. Calls `in.nextLine()` and passes the result to the `check` method of
 	   `checker`
-	5. Prints the result of the method call.
+	6. Prints the result of the method call.
 		1. if it is true then "Syntax Correct"
 		2. if it is false then "Syntax Error"
 
@@ -267,8 +271,8 @@ Create the following class.
 3. Fully Implement the `check` method in `BracketChecker` so that it examines each character
 
    **Hint** use `.charAt(int index)` in the `String` passed as a parameter<br><br>
-	1. if it is an opening '{' push it onto the stack
-	2. if it is a closing '}' and,
+	1. if it is an opening '{', push it onto the stack, i.e. if the charAt(index) == opening[0]
+	2. if it is a closing '}', i.e. if the charAt(index) == closing[0] , and,
 		1. the stack is empty, then return false
 		2. else pop the stack, .pop()
 	3. any other character is ignored (not pushed onto the stack)
@@ -393,37 +397,29 @@ error occurred so that it can be retrieved in the event of an error.
 To make the BracketChecker class more general we can check for more than just '{' and '}'
 
 1. Modify the BracketChecker class to include the following
-	1. add an instance variable to store the opening bracket types, an array of char's
-
-	   `char[] opening`
-	2. add an instance variable to store the closing bracket types, an array of char's
-
-	   `char[] closing`
-	3. add a constructor that sets the values of `opening` and `closing` (e.g. right-click <kbd>"
-	   Generate..."</kbd> or <kbd>"Alt + Insert"</kbd> on a Windows machine)
-	4. add a private method to check if a character is an opening character, use the code below
-	    ```java
-		 /**
-		 * Determine if the parameter 'in' is in the opening array and returns
-		 * the position if found.
-		 *
-		 * @param in the character to check
-		 * @return the position in the array if found, -1 otherwise
-		 */
-		   private int isOpening(char in) {
-			 for (int ci = 0; ci < opening.length; ci++) {
-				 if (in == opening[ci]) {
-				 return ci;
-				 }
-			 }
-		   return -1; // character not found
-		   }
-		```
-	5. add a private method to check if a character is a closing character copy-and-paste/reuse the `
+	1. add a private method to check if a character is an opening character, use the code below
+	   ```java
+		/**
+		* Determine if the parameter 'in' is in the opening array and returns
+		* the position if found.
+		*
+		* @param in the character to check
+		* @return the position in the array if found, -1 otherwise
+		*/
+		  private int isOpening(char in) {
+			for (int ci = 0; ci < opening.length; ci++) {
+				if (in == opening[ci]) {
+				return ci;
+				}
+			}
+			return -1; // character not found
+		  }
+	   ```
+	2. add a private method to check if a character is a closing character copy-and-paste/reuse the `
 	   isOpening` code
-	6. use the `isOpening` and `isClosing` methods in the check method to see if the current character is an opening or
+	3. use the `isOpening` and `isClosing` methods in the check method to see if the current character is an opening or
 	   closing bracket (e.g. `isOpening` returns a value > -1)
-	7. to determine if there is a correct bracket sequence you need to check the top of stack (using `
+	4. to determine if there is a correct bracket sequence you need to check the top of stack (using `
 	   .peek()`) to see if a current closing bracket matches the top of the stack. For example,
 	   ```java
 		 int cli = isClosing(line.charAt(c));
@@ -432,17 +428,13 @@ To make the BracketChecker class more general we can check for more than just '{
 		 // ERROR, not matching brackets
 		 }
 	   ```
-2. Add to the main method two variables that represent the opening and closing brackets sets, e.g.
+3. Add the following brackets to the `opening` and `closing` arrays.
 
     ```java
     char[] opening = {'{','(', '[', '<'};
     char[] closing = {'}',')', ']', '>'};
     ```
-
-   Pass these new variables to the new `BracketChecker` constructor, e.g.
-   `BracketChecker bc = new BracketChecker(opening, closing);`
-
-3. `brackets02.txt` is in the assets folder, so change the `filePath` and use this new file. Run the application.
+4. `brackets02.txt` is in the assets folder, so change the `filePath` and use this new file. Run the application.
    The below output should be produced.
     <pre><code>
     {}{} 
@@ -461,7 +453,7 @@ To make the BracketChecker class more general we can check for more than just '{
     Syntax Error at position 1 
     Exiting Checker
     </code></pre>
-4. Add more bracket combinations and more lines to the file to test out your application. The file `brackets03.txt`,
+5. Add more bracket combinations and more lines to the file to test out your application. The file `brackets03.txt`,
    available in the assets folder, contains '{', '(', '<', and '[' combinations for `opening` and `closing`.
 
 ### Task 4
@@ -509,11 +501,11 @@ priority of severity.
 
    <pre><code><span style="color: red">
    Exception in thread "main" java.lang.ClassCastException: practical03vets.Wombat cannot be cast to java.lang.Comparable
-   	at java.base/java.util.PriorityQueue.siftUpComparable(PriorityQueue.java:642)
-   	at java.base/java.util.PriorityQueue.siftUp(PriorityQueue.java:638)
-   	at java.base/java.util.PriorityQueue.offer(PriorityQueue.java:329)
-   	at java.base/java.util.PriorityQueue.add(PriorityQueue.java:310)
-   	at WombatDriver.main(WombatDriver.java:11)
+       at java.base/java.util.PriorityQueue.siftUpComparable(PriorityQueue.java:642)
+       at java.base/java.util.PriorityQueue.siftUp(PriorityQueue.java:638)
+       at java.base/java.util.PriorityQueue.offer(PriorityQueue.java:329)
+       at java.base/java.util.PriorityQueue.add(PriorityQueue.java:310)
+       at WombatDriver.main(WombatDriver.java:11)
    Java Result: 1
    </span></code></pre>
 
@@ -532,10 +524,7 @@ priority of severity.
     Fluffy, 5, 10.5 
     Jobe, 3, 12.0
     ```
-
-### Task 5
-
-1. Wombats that have the same severity level are grouped together and are retrieved from the queue in any order
+4. Wombats that have the same severity level are grouped together and are retrieved from the queue in any order
    (from the API: "ties are broken arbitrarily"). Wombats with the same `severity` should order so that the Wombat with
    the earliest `time` should have a higher priority. Modify the `compareTo` method to operate in this way. The output
    from the original set of Wombats should now be (note the order of Barry and Socks):
@@ -546,12 +535,16 @@ priority of severity.
     Fluffy, 5, 10.5
     Jobe, 3, 12.0
     ```
-2. Some Wombats, such as Ginger, may try to jump the queue by have a severity higher than the maximum of 10. To counter
+
+### Task 5
+
+1. Some Wombats, such as Ginger, may try to jump the queue by have a severity higher than the maximum of 10. To counter
    this, create a new exception that is raised when an out-of-bounds severity is detected.
 	1. create a new class that extends the `Exception` class called `SeverityOutOfBoundsException`
 	2. in the Wombat constructor check the that the value of `severity` is greater than 0 and less than 11, that is in
 	   the range [1 10]
-	3. if `severity` is out of bounds throw an instance of your newly created exception class
+	3. if `severity` is out of bounds throw an instance of your newly created exception class and make the message
+	   "Severity is not within 1-10"
 	4. add the necessary `throws` clauses to your methods
 	5. If you still have Ginger in your list of Wombats you should receive an exception similar to the following
 	   <pre><code><span style="color: red;">
@@ -559,15 +552,15 @@ priority of severity.
 	   at WombatDriver.main(WombatDriver.java:15)<br>
 	   Process finished with exit code 1
 	   </span></code></pre>
-3. To make the application more usable get Wombat data from the user via the keyboard.
+2. To make the application more usable get Wombat data from the user via the keyboard.
 	1. add a `Scanner` object to read from the keyboard (`System.in`)
-	2. keep reading from the keyboard until the user enters `QUIT`
+	2. keep reading from the keyboard until the user enters `QUIT` (case independent)
 	3. use another `Scanner` object to extract the `name`, `severity`, and
 	   `time` from each line entered
 
 	   **Hint:** use `.next()`, `.nextInt()`, and `.nextDouble()`
 
-	4. if the users enters `PROCESS` then the queue should be processed/emptied.
+	4. if the users enters `PROCESS` (case independent) then the queue should be processed/emptied.
 	5. add a `try-catch` your `main` method to catch the out-of-bounds exception. Print an informative message and
 	   continue accepting user input. Example output is shown below. User Input in **bold**
     <pre><code> <b>Sweeps 4 10.3
