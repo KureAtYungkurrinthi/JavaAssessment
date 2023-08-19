@@ -40,7 +40,8 @@ public class DogRegister {
     public Collection<Dog> getDogsWhoseNameContains(String charSequence) {
         List<Dog> output = new ArrayList<>();
         for (Dog dog : dogRegister)
-            if (dog.getName().contains(charSequence)) output.add(dog);
+            if (dog.getName().contains(charSequence))
+                output.add(dog);
         return output;
     }
 
@@ -53,7 +54,8 @@ public class DogRegister {
     public Collection<Dog> getByCondition(DogCondition c) {
         List<Dog> output = new ArrayList<>();
         for (Dog dog : dogRegister)
-            if (c.satisfies(dog)) output.add(dog);
+            if (c.satisfies(dog))
+                output.add(dog);
         return output;
     }
 
@@ -62,7 +64,8 @@ public class DogRegister {
         StringBuilder output = new StringBuilder();
         for (int i = 0; i < dogRegister.size(); i++) {
             output.append(dogRegister.get(i));
-            if (i < dogRegister.size() - 1) output.append("\n");
+            if (i < dogRegister.size() - 1)
+                output.append("\n");
         }
         return output.toString();
     }

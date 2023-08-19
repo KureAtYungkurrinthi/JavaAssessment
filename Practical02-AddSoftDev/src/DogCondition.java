@@ -1,3 +1,3 @@
 public interface DogCondition {
-    public boolean satisfies(Dog dog);
+    boolean satisfies(Dog dog);
 }
