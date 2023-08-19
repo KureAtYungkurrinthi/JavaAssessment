@@ -1,9 +1,14 @@
 import java.util.Stack;
 
 public class BracketChecker {
-    private final Stack<Character> stack = new Stack<>();
+    private final Stack<Character> stack = new Stack<Character>();
     private final char[] opening;
     private final char[] closing;
+    private int position;
+
+    public int getPosition() {
+        return position;
+    }
 
     public BracketChecker(char[] opening, char[] closing) {
         this.opening = opening;
@@ -17,11 +22,18 @@ public class BracketChecker {
             if (c == opening[0])
                 stack.push(c);
             else if (c == closing[0]) {
-                if (stack.empty())
+                if (stack.empty()) {
+                    position = i;
                     return false;
+                }
                 stack.pop();
             }
         }
-        return stack.empty();
+        if (stack.empty()) {
+            return true;
+        } else {
+            position = text.length();
+            return false;
+        }
     }
 }
