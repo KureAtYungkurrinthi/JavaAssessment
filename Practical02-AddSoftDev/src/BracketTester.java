@@ -10,16 +10,19 @@ public class BracketTester {
      */
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println("Starting Bracket Checker application");
-        char[] opening = new char[]{'{'};
-        char[] closing = new char[]{'}'};
+        char[] opening = {'{', '(', '[', '<'};
+        char[] closing = {'}', ')', ']', '>'};
         BracketChecker checker = new BracketChecker(opening, closing);
 
+        // Read from the file and store it in the queue/buffer
         Queue<String> queue = new ArrayDeque<String>();
-        String filePath = "assets/brackets01.txt";
+        String filePath = "assets/brackets02.txt";
         Scanner in = new Scanner(new FileReader(filePath));
-        while (in.hasNextLine())
+        while (in.hasNextLine()) {
             queue.offer(in.nextLine());
+        }
 
+        // Process each item in the queue and check brackets
         while (queue.peek() != null) {
             System.out.println(queue.peek());
             if (checker.check(queue.poll())) {
