@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5867bb09-0902-4ac3-9af8-f50280b72ad8" name="Default Changelist" comment="">
+    <list default="true" id="5867bb09-0902-4ac3-9af8-f50280b72ad8" name="Default Changelist" comment="P2T3 add comments and javadoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BracketChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BracketChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BracketTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BracketTester.java" afterDir="false" />
@@ -230,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692464248543</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="P2T3 check for more than just '{' and '}'">
+      <option name="closed" value="true" />
+      <created>1692470631116</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692470631116</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +271,8 @@
     <MESSAGE value="Part 1 Task 5 done." />
     <MESSAGE value="P2T1 initial stack" />
     <MESSAGE value="P2T2 simple queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="P2T2 simple queue" />
+    <MESSAGE value="P2T3 check for more than just '{' and '}'" />
+    <option name="LAST_COMMIT_MESSAGE" value="P2T3 check for more than just '{' and '}'" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

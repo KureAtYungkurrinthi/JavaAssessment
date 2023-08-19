@@ -1,11 +1,29 @@
 import java.util.Stack;
 
 public class BracketChecker {
+    /**
+     * Stack used to track opening and closing brackets.
+     */
     private final Stack<Character> stack = new Stack<Character>();
+    /**
+     * Array containing the types of opening brackets.
+     */
     private final char[] opening;
+    /**
+     * Array containing the types of closing brackets.
+     */
     private final char[] closing;
+    /**
+     * Variable to track the position of the incorrect bracket, if any.
+     */
     private int position;
 
+    /**
+     * Constructs a new BracketChecker with specified opening and closing brackets.
+     *
+     * @param opening Array of opening brackets.
+     * @param closing Array of closing brackets.
+     */
     public BracketChecker(char[] opening, char[] closing) {
         this.opening = opening;
         this.closing = closing;
@@ -43,11 +61,27 @@ public class BracketChecker {
         return -1; // character not found
     }
 
-    // Retrieve the index of the character where the error occurred
+    /**
+     * Returns the position of the incorrect bracket, if any.
+     *
+     * @return Position of the incorrect bracket.
+     */
     public int getPosition() {
         return position;
     }
 
+    /**
+     * Checks the given text for correct sequence and nesting of brackets.
+     *
+     * <p>
+     * This method traverses the given text and checks if the brackets
+     * are correctly nested and balanced using the specified opening and
+     * closing brackets.
+     * </p>
+     *
+     * @param text The text containing the sequence of brackets to check.
+     * @return True if the sequence is correct, false otherwise.
+     */
     public boolean check(String text) {
         stack.clear();
         for (int i = 0; i < text.length(); i++) {
@@ -56,6 +90,7 @@ public class BracketChecker {
                 stack.push(c);
             } else if (isClosing(c) > -1) {
                 if (stack.empty() || stack.peek() != opening[isClosing(c)]) {
+                    // ERROR, not matching brackets
                     position = i;
                     return false;
                 }
