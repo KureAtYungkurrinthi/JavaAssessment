@@ -25,7 +25,6 @@ public class DogRegister {
 
     // Removes, and returns, the Dog with a registration number of regNum
     // If there is no Dog with that sequence number, null is returned.
-    // Include thorough testing code in the main method.
     public Dog deleteDog(int regNum) {
         for (int i = 0; i < dogRegister.size(); i++)
             if (dogRegister.get(i).getRegNum() == regNum) {
@@ -38,12 +37,17 @@ public class DogRegister {
 
     // Returns a Collection<Dog> containing all the Dogs whose name contains
     // charSequence.  Does not change the contents of the register.
-    // Include thorough testing code in the main method.
     public Collection<Dog> getDogsWhoseNameContains(String charSequence) {
         List<Dog> output = new ArrayList<>();
         for (Dog dog : dogRegister)
             if (dog.getName().contains(charSequence)) output.add(dog);
         return output;
+    }
+
+    // Re-orders (sorts) the register so that all dogs with the same breed are
+    // together (that is, in sequential indexes).
+    public void GroupByBreed() {
+        dogRegister.sort(new dogRegisterComparator());
     }
 
     @Override

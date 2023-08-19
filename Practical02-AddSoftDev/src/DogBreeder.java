@@ -24,14 +24,14 @@ public class DogBreeder {
         Dog.printTotal();
 
         // Task 4
-        System.out.println("Starting dog register");
+        System.out.println("\nStarting dog register");
 
         // Modify the main method so that it creates a DogRegister object,
         // adds lots of dogs to it and demonstrates that your methods are correct.
         DogRegister register = new DogRegister();
         Dog mydog3 = new Dog("Charlie", "Siberian Husky", 101);
         Dog mydog4 = new Dog("Bella", "Tugou", 102);
-        Dog mydog5 = new Dog("Luna", "Corgi", 103);
+        Dog mydog5 = new Dog("Luna", "Tugou", 103);
         Dog mydog6 = new Dog("Lucy", "Shiba Inu", 104);
         register.addDog(mydog1);
         register.addDog(mydog2);
@@ -44,20 +44,26 @@ public class DogBreeder {
 
         // Testing retrieving a dog
         Dog retrievedDog = register.getDog(101);
-        System.out.println("Retrieved dog: " + retrievedDog);
+        System.out.println("\nRetrieved dog: " + retrievedDog);
 
         // Testing deletion
-        Dog deletedDog = register.deleteDog(102);
-        System.out.println("Deleted dog: " + deletedDog);
+        Dog deletedDog = register.deleteDog(-1);
+        System.out.println("\nDeleted dog: " + deletedDog);
         System.out.println("Register after deletion: \n" + register);
 
         // Testing deletion when no Dog has that registration number
         Dog nonExistedDog = register.deleteDog(111);
-        System.out.println("Trying to delete non-existed dog: " + nonExistedDog);
+        System.out.println("\nTrying to delete non-existed dog: " + nonExistedDog);
 
         // Testing getting dogs with a specific name sequence
         Collection<Dog> dogsWithName = register.getDogsWhoseNameContains("Lu");
-        System.out.println("Dogs with names containing 'Lu': " + dogsWithName);
+        System.out.println("\nDogs with names containing 'Lu': " + dogsWithName);
+
+        // Task 5
+        // Testing re-orders (sorts) the register
+        register.GroupByBreed();
+        System.out.println("\nRegister after grouping: \n" + register);
+
 
     }
 }
