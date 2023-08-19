@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5867bb09-0902-4ac3-9af8-f50280b72ad8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Wombat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WombatVetClinic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SeverityOutOfBoundsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wombat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wombat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WombatVetClinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WombatVetClinic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692471183815</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="P2T4 wombat clinic queue">
+      <option name="closed" value="true" />
+      <created>1692473447323</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1692473447323</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +289,8 @@
     <MESSAGE value="P2T2 simple queue" />
     <MESSAGE value="P2T3 check for more than just '{' and '}'" />
     <MESSAGE value="P2T3 add comments and javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="P2T3 add comments and javadoc" />
+    <MESSAGE value="P2T4 wombat clinic queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="P2T4 wombat clinic queue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

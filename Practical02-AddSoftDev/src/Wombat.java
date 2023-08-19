@@ -3,7 +3,9 @@ public class Wombat implements Comparable<Wombat> {
     private int severity;
     private double time;
 
-    public Wombat(String name, int severity, double time) {
+    public Wombat(String name, int severity, double time) throws SeverityOutOfBoundsException {
+        if (severity < 1 || severity > 10)
+            throw new SeverityOutOfBoundsException();
         this.name = name;
         this.severity = severity;
         this.time = time;

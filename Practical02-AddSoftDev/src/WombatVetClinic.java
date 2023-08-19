@@ -2,10 +2,9 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class WombatVetClinic {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SeverityOutOfBoundsException {
         Queue<Wombat> wombatQueue = new PriorityQueue<Wombat>();
 
-        wombatQueue.offer(new Wombat("Fluffy", 5, 10.5));
         wombatQueue.offer(new Wombat("Socks", 10, 11.3));
         wombatQueue.offer(new Wombat("Barry", 10, 10.8));
         wombatQueue.offer(new Wombat("Jobe", 3, 12.0));
