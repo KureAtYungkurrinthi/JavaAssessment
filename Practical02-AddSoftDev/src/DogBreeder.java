@@ -61,7 +61,7 @@ public class DogBreeder {
 
         // Task 5
         // Testing re-orders (sorts) the register
-        register.GroupByBreed();
+        register.groupByBreed();
         System.out.println("\nRegister after grouping: \n" + register);
 
         // Testing DogCondition interface

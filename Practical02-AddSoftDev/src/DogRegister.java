@@ -47,7 +47,7 @@ public class DogRegister {
 
     // Re-orders (sorts) the register so that all dogs with the same breed are
     // together (that is, in sequential indexes).
-    public void GroupByBreed() {
+    public void groupByBreed() {
         dogRegister.sort(new DogBreedComparator());
     }
 

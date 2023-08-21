@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Dog {
-    private static int count = 0;
+    protected static int count = 0;
     private final Set<String> owners = new HashSet<>();
     private final int seqNum;
     private String name;
