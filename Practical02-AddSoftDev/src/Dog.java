@@ -29,7 +29,7 @@ public class Dog {
         System.out.println("Total number of dogs bred = " + count);
     }
 
-    public int getCount() {
+    public static int getCount() {
         return count;
     }
 
@@ -45,11 +45,11 @@ public class Dog {
         this.name = name;
     }
 
-    public String getDogBreed() {
+    public String getBreed() {
         return dogBreed;
     }
 
-    public void setDogBreed(String dogBreed) {
+    public void setBreed(String dogBreed) {
         this.dogBreed = dogBreed;
     }
 
