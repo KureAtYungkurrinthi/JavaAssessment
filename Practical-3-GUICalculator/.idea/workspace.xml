@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32503934-ad4b-456a-b3fc-69e3903309df" name="Default Changelist" comment="Changed the name to Practical-3-GUICalculator" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="addFunctionality" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="1q5f5iCYIxBYT5sRSUbmrU04nor" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "skeleton",
+    "last_opened_file_path": "T:/Teaching/COMP8741/repo_staging/starterCode/Practical-3-GUICalculator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3041145",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="T:\Teaching\COMP8741\pracs\solutions\Practical-4-AppDev-GUICalculator\specifications" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CalculatorDriver">
+    <configuration name="CalculatorDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CalculatorDriver" />
+      <module name="Practical-3-GUICalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="guicalculator.Main" />
+      <module name="Practical-3-GUICalculator" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CalculatorDriver" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CalculatorDriver" />
+        <item itemvalue="Application.CalculatorDriver" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\moon0016\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32503934-ad4b-456a-b3fc-69e3903309df" name="Default Changelist" comment="" />
+      <created>1616374191401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616374191401</updated>
+      <workItem from="1616374192703" duration="498000" />
+      <workItem from="1616387096837" duration="55000" />
+      <workItem from="1616392583822" duration="156000" />
+      <workItem from="1645579126927" duration="269000" />
+      <workItem from="1665182706685" duration="327000" />
+      <workItem from="1693996398405" duration="37633000" />
+      <workItem from="1694755737047" duration="229000" />
+      <workItem from="1695021472998" duration="21037000" />
+      <workItem from="1696283816439" duration="3192000" />
+      <workItem from="1696305834980" duration="29000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1616374439253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616374439253</updated>
+    </task>
+    <task id="LOCAL-00002" summary="unversioned">
+      <created>1616392689796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616392689796</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed floats and went with doubles">
+      <option name="closed" value="true" />
+      <created>1693997668974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693997668974</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removed floats and went with doubles">
+      <option name="closed" value="true" />
+      <created>1694154766964</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694154766964</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added new functionality for reciprocal, square, square root, change sign and decimal.&#10;Also made the calculation area simulate the windows calculator.">
+      <option name="closed" value="true" />
+      <created>1694332060710</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694332060710</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated Task 1 and Task 2 specifications.">
+      <option name="closed" value="true" />
+      <created>1694755897089</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694755897089</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated Task 1 and Task 2 specifications.">
+      <option name="closed" value="true" />
+      <created>1694755948414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694755948414</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finished the specs for now">
+      <option name="closed" value="true" />
+      <created>1695023178946</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695023178946</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Finished the specs by adding info about the DEL key.&#10;Also coded the DEL key and ensured no errors when removing all digits with the DEL key.&#10;Need to have some examples of what the calculation should look like for x squared, square root">
+      <option name="closed" value="true" />
+      <created>1695188865523</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695188865523</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added some examples of calculations.&#10;Added the % calculations.">
+      <option name="closed" value="true" />
+      <created>1695196054791</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695196054791</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Tidied up the specs with examples of how the functions should work.">
+      <option name="closed" value="true" />
+      <created>1695256149439</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695256149439</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tidied up the specs with examples of how the functions should work.">
+      <option name="closed" value="true" />
+      <created>1695256469500</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695256469500</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Tidied up the specs">
+      <option name="closed" value="true" />
+      <created>1695369058423</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695369058423</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Created the skeleton for the students">
+      <option name="closed" value="true" />
+      <created>1695370139286</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695370139286</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Created the skeleton for the students">
+      <option name="closed" value="true" />
+      <created>1696304812969</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1696304812969</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Changed the name to Practical-3-GUICalculator">
+      <option name="closed" value="true" />
+      <created>1696305216638</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1696305216638</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="unversioned" />
+    <MESSAGE value="removed floats and went with doubles" />
+    <MESSAGE value="Added new functionality for reciprocal, square, square root, change sign and decimal.&#10;Also made the calculation area simulate the windows calculator." />
+    <MESSAGE value="Updated Task 1 and Task 2 specifications." />
+    <MESSAGE value="Finished the specs for now" />
+    <MESSAGE value="Finished the specs by adding info about the DEL key.&#10;Also coded the DEL key and ensured no errors when removing all digits with the DEL key.&#10;Need to have some examples of what the calculation should look like for x squared, square root" />
+    <MESSAGE value="Added some examples of calculations.&#10;Added the % calculations." />
+    <MESSAGE value="Tidied up the specs with examples of how the functions should work." />
+    <MESSAGE value="Tidied up the specs" />
+    <MESSAGE value="Created the skeleton for the students" />
+    <MESSAGE value="Changed the name to Practical-3-GUICalculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the name to Practical-3-GUICalculator" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>
