@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32503934-ad4b-456a-b3fc-69e3903309df" name="Default Changelist" comment="Changed the name to Practical-3-GUICalculator">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="32503934-ad4b-456a-b3fc-69e3903309df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CalculatorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorPanel.java" afterDir="false" />
     </list>
@@ -322,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696305216638</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Practical 3 Task 1 completed.">
+      <option name="closed" value="true" />
+      <created>1696471028113</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1696471028113</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +363,8 @@
     <MESSAGE value="Tidied up the specs" />
     <MESSAGE value="Created the skeleton for the students" />
     <MESSAGE value="Changed the name to Practical-3-GUICalculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the name to Practical-3-GUICalculator" />
+    <MESSAGE value="Practical 3 Task 1 completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Practical 3 Task 1 completed." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
