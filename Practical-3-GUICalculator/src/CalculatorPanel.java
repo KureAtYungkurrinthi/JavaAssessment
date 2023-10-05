@@ -30,6 +30,7 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
     private double num2 = 0;
     private String op = null;
     private boolean equalPressed = false;
+    private double memory = 0;
 
     /**
      * Constructor for the Calculator Panel: Sets up the GUI
@@ -131,13 +132,19 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
                 }
                 case DELETE ->
                         result.setText(resultText.length() == 1 ? "0" : resultText.substring(0, resultText.length() - 1));
-                case "C", "CE" -> {
+                case "C" -> {
                     num1 = 0;
                     num2 = 0;
                     op = null;
                     calculation.setText("");
                     result.setText("0");
                 }
+                case "CE" -> result.setText("0");
+                case "MS" -> memory = Double.parseDouble(result.getText());
+                case "M+" -> memory += Double.parseDouble(result.getText());
+                case "M-" -> memory -= Double.parseDouble(result.getText());
+                case "MR" -> result.setText(df.format(memory));
+                case "MC" -> memory = 0;
             }
         }
 
