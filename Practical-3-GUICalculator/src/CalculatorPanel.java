@@ -29,6 +29,7 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
     private double num1 = 0;
     private double num2 = 0;
     private String op = null;
+    private boolean equalPressed = false;
 
     /**
      * Constructor for the Calculator Panel: Sets up the GUI
@@ -95,17 +96,38 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
             String buttonLabel = e.getActionCommand();
             switch (buttonLabel) {
                 case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ->
-                        result.setText(resultText.equals("0") ? buttonLabel : resultText + buttonLabel);
+                        result.setText((resultText.equals("0") || equalPressed) ? buttonLabel : (resultText + buttonLabel));
+                case DECIMAL -> {
+                    if (!resultText.endsWith(DECIMAL)) {
+                        result.setText(resultText + buttonLabel);
+                    }
+                }
+                case CHANGE_SIGN ->
+                        result.setText(resultText.startsWith("-") ? resultText.substring(1, resultText.length() + 1) : "-" + resultText);
+                case "%" ->
+                        result.setText(df.format(((op.equals(ADDITION) || op.equals(SUBTRACTION)) ? (num1 * Double.parseDouble(resultText)) : (Double.parseDouble(resultText))) / 100));
                 case ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION -> {
                     num1 = Double.parseDouble(resultText);
                     op = buttonLabel;
                     calculation.setText(df.format(num1) + " " + op);
                     result.setText("0");
                 }
+                case SQUARE_ROOT, X_SQUARED, RECIPROCAL -> {
+                    num1 = Double.parseDouble(resultText);
+                    op = buttonLabel;
+                    calculation.setText(switch (op) {
+                        case SQUARE_ROOT -> "√(";
+                        case X_SQUARED -> "sqr(";
+                        case RECIPROCAL -> "1/(";
+                        default -> "";
+                    } + df.format(num1) + ")");
+                    result.setText(df.format(calculate(op, num1)));
+                }
                 case EQUALS -> {
                     num2 = Double.parseDouble(resultText);
                     calculation.setText(calculation.getText() + " " + df.format(num2) + " " + EQUALS);
                     result.setText(df.format(calculate(op, num1, num2)));
+                    equalPressed = true;
                 }
                 case DELETE ->
                         result.setText(resultText.length() == 1 ? "0" : resultText.substring(0, resultText.length() - 1));
@@ -125,6 +147,15 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
                 case SUBTRACTION -> num1 - num2;
                 case MULTIPLICATION -> num1 * num2;
                 case DIVISION -> num1 / num2;
+                default -> 0;
+            };
+        }
+
+        private double calculate(String op, double num1) {
+            return switch (op) {
+                case SQUARE_ROOT -> Math.sqrt(num1);
+                case X_SQUARED -> num1 * num1;
+                case RECIPROCAL -> 1 / num1;
                 default -> 0;
             };
         }
