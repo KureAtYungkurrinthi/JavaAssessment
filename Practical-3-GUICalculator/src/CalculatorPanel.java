@@ -12,8 +12,6 @@ import java.text.DecimalFormat;
 public class CalculatorPanel extends JPanel implements ButtonConstants {
     private static final int CALC_WIDTH = 265;
     private static final int CALC_HEIGHT = 375;
-    private JLabel calculation;
-    private JLabel result;
     private final String[] labels = {
             "MC", "MR", "M+", "M-", "MS",
             "%", "CE", "C", DELETE,
@@ -24,12 +22,13 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
             CHANGE_SIGN, "0", DECIMAL, EQUALS
     };
     private final JButton[] buttons = new JButton[labels.length];
+    private JLabel calculation;
+    private JLabel result;
     private JPanel memoryPanel;
     private JPanel calcPanel;
     private double num1 = 0;
     private double num2 = 0;
     private String op = null;
-    private boolean equalPressed = false;
     private double memory = 0;
 
     /**
@@ -97,7 +96,7 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
             String buttonLabel = e.getActionCommand();
             switch (buttonLabel) {
                 case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ->
-                        result.setText((resultText.equals("0") || equalPressed) ? buttonLabel : (resultText + buttonLabel));
+                        result.setText(resultText.equals("0") ? buttonLabel : resultText + buttonLabel);
                 case DECIMAL -> {
                     if (!resultText.endsWith(DECIMAL)) {
                         result.setText(resultText + buttonLabel);
@@ -128,7 +127,6 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
                     num2 = Double.parseDouble(resultText);
                     calculation.setText(calculation.getText() + " " + df.format(num2) + " " + EQUALS);
                     result.setText(df.format(calculate(op, num1, num2)));
-                    equalPressed = true;
                 }
                 case DELETE ->
                         result.setText(resultText.length() == 1 ? "0" : resultText.substring(0, resultText.length() - 1));
@@ -145,6 +143,7 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
                 case "M-" -> memory -= Double.parseDouble(result.getText());
                 case "MR" -> result.setText(df.format(memory));
                 case "MC" -> memory = 0;
+                default -> throw new IllegalStateException("Unexpected button value: " + buttonLabel);
             }
         }
 
@@ -154,7 +153,7 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
                 case SUBTRACTION -> num1 - num2;
                 case MULTIPLICATION -> num1 * num2;
                 case DIVISION -> num1 / num2;
-                default -> 0;
+                default -> throw new IllegalStateException("Unexpected op value: " + op);
             };
         }
 
@@ -163,7 +162,7 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
                 case SQUARE_ROOT -> Math.sqrt(num1);
                 case X_SQUARED -> num1 * num1;
                 case RECIPROCAL -> 1 / num1;
-                default -> 0;
+                default -> throw new IllegalStateException("Unexpected op value: " + op);
             };
         }
     }
