@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 /**
  * The calculator panel
@@ -13,7 +14,7 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
     private static final int CALC_HEIGHT = 375;
     private JLabel calculation;
     private JLabel result;
-    private final String[] texts = {
+    private final String[] labels = {
             "MC", "MR", "M+", "M-", "MS",
             "%", "CE", "C", DELETE,
             RECIPROCAL, X_SQUARED, SQUARE_ROOT, DIVISION,
@@ -22,9 +23,12 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
             "1", "2", "3", ADDITION,
             CHANGE_SIGN, "0", DECIMAL, EQUALS
     };
-    private final JButton[] buttons = new JButton[texts.length];
+    private final JButton[] buttons = new JButton[labels.length];
     private JPanel memoryPanel;
     private JPanel calcPanel;
+    private double num1 = 0;
+    private double num2 = 0;
+    private String op = null;
 
     /**
      * Constructor for the Calculator Panel: Sets up the GUI
@@ -52,12 +56,12 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
         add(result);
 
         for (int i = 0; i < buttons.length; i++) {
-            buttons[i] = new JButton(texts[i]);
+            buttons[i] = new JButton(labels[i]);
             buttons[i].setPreferredSize(new Dimension(65, 40));
             buttons[i].setFont(new Font("Helvetica", Font.PLAIN, 13));
             buttons[i].setForeground(Color.darkGray);
             buttons[i].addActionListener(new ButtonListener());
-            switch (texts[i]) {
+            switch (labels[i]) {
                 case "CE", "C" -> buttons[i].setForeground(Color.red);
                 case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ->
                         buttons[i].setFont(new Font("Helvetica", Font.BOLD, 13));
@@ -86,7 +90,43 @@ public class CalculatorPanel extends JPanel implements ButtonConstants {
 
     private class ButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            // an empty body, you will complete it later.
+            DecimalFormat df = new DecimalFormat("0.########");
+            String resultText = result.getText();
+            String buttonLabel = e.getActionCommand();
+            switch (buttonLabel) {
+                case "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ->
+                        result.setText(resultText.equals("0") ? buttonLabel : resultText + buttonLabel);
+                case ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION -> {
+                    num1 = Double.parseDouble(resultText);
+                    op = buttonLabel;
+                    calculation.setText(df.format(num1) + " " + op);
+                    result.setText("0");
+                }
+                case EQUALS -> {
+                    num2 = Double.parseDouble(resultText);
+                    calculation.setText(calculation.getText() + " " + df.format(num2) + " " + EQUALS);
+                    result.setText(df.format(calculate(op, num1, num2)));
+                }
+                case DELETE ->
+                        result.setText(resultText.length() == 1 ? "0" : resultText.substring(0, resultText.length() - 1));
+                case "C", "CE" -> {
+                    num1 = 0;
+                    num2 = 0;
+                    op = null;
+                    calculation.setText("");
+                    result.setText("0");
+                }
+            }
+        }
+
+        private double calculate(String op, double num1, double num2) {
+            return switch (op) {
+                case ADDITION -> num1 + num2;
+                case SUBTRACTION -> num1 - num2;
+                case MULTIPLICATION -> num1 * num2;
+                case DIVISION -> num1 / num2;
+                default -> 0;
+            };
         }
     }
 
