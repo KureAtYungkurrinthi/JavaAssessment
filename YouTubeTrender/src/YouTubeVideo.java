@@ -170,7 +170,7 @@ public class YouTubeVideo {
                 "Title: " + title + "\n" +
                 "Channel ID: " + channelId + "\n" +
                 "Channel Title: " + channelTitle + "\n" +
-                "Description: " + description + "\n" +
+                "Description: " + description.replace("\n", " ") + "\n" +
                 "Published At: " + publishedAt + "\n" +
                 "View Count: " + viewCount;
     }
