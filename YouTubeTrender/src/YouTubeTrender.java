@@ -1,9 +1,10 @@
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.List;
 
 public class YouTubeTrender {
 
@@ -24,10 +25,10 @@ public class YouTubeTrender {
         JsonArray items = jobj.getJsonArray("items");
 
         System.out.println("Size of input: " + items.size());
-        System.out.println("Sucess: " + (expectedSize == items.size()));
+        System.out.println("Success: " + (expectedSize == items.size()));
     }
 
-/*    public static void test2() throws YouTubeDataParserException {
+    public static void test2() throws YouTubeDataParserException {
 
         System.out.println("Performing Test 2");
         String filename = "data/youtubedata_loremipsum.json";
@@ -41,16 +42,16 @@ public class YouTubeTrender {
         List<YouTubeVideo> list = parser.parse(filename);
 
         System.out.println("Found size: " + list.size());
-
-    }*/
+    }
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, YouTubeDataParserException {
         System.out.println("YouTube Trender Application");
 
         test1();
+        test2();
 
     }
 }
