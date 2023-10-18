@@ -4,137 +4,174 @@ import java.time.Instant;
  * Represents a YouTube video with associated metadata.
  */
 public class YouTubeVideo {
+    private String id;
+    private String title;
     private String channelId;
     private String channelTitle;
-    private Instant publishedAt;
-    private String title;
     private String description;
+    private Instant publishedAt;
     private int viewCount;
 
     /**
      * Constructs a new YouTubeVideo instance.
      *
-     * @param channelId  the ID that YouTube uses to uniquely identify the channel that the video was uploaded to
-     * @param channelTitle  channel title for the channel that the video belongs to
-     * @param publishedAt the date and time that the video was published
-     * @param title the video's title. The property value has a maximum length of 100 characters and may contain all valid UTF-8 characters except < and >
-     * @param description the video's description. The property value has a maximum length of 5000 bytes and may contain all valid UTF-8 characters except < and >
-     * @param viewCount  the number of times the video has been viewed
+     * @param id           the ID that YouTube uses to uniquely identify the video
+     * @param title        the video's title. The property value has a maximum length of 100 characters and may contain all valid UTF-8 characters except < and >
+     * @param channelId    the ID that YouTube uses to uniquely identify the channel that the video was uploaded to
+     * @param channelTitle channel title for the channel that the video belongs to
+     * @param description  the video's description. The property value has a maximum length of 5000 bytes and may contain all valid UTF-8 characters except < and >
+     * @param publishedAt  the date and time that the video was published
+     * @param viewCount    the number of times the video has been viewed
      */
-    public YouTubeVideo(String channelId, String channelTitle, Instant publishedAt, String title, String description, int viewCount) {
+    public YouTubeVideo(String id, String title, String channelId, String channelTitle, String description, Instant publishedAt, int viewCount) {
+        this.id = id;
+        this.title = title;
         this.channelId = channelId;
         this.channelTitle = channelTitle;
-        this.publishedAt = publishedAt;
-        this.title = title;
         this.description = description;
+        this.publishedAt = publishedAt;
         this.viewCount = viewCount;
     }
-
+    
     /**
-     * Retrieves the ID of the channel the video belongs to.
+     * Retrieves the video ID.
      *
-     * @return the channelId of the YouTube video
+     * @return the video's unique ID.
      */
-    public String getChannelId() {
-        return channelId;
+    public String getId() {
+        return id;
     }
 
     /**
-     * Sets the ID of the channel the video belongs to.
+     * Sets the video ID.
      *
-     * @param channelId the ID to set for the YouTube video's channel
+     * @param id the unique video ID.
      */
-    public void setChannelId(String channelId) {
-        this.channelId = channelId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     /**
-     * Retrieves the title of the channel the video belongs to.
+     * Retrieves the video title.
      *
-     * @return the channel title of the YouTube video
-     */
-    public String getChannelTitle() {
-        return channelTitle;
-    }
-
-    /**
-     * Sets the title of the channel the video belongs to.
-     *
-     * @param channelTitle the title to set for the YouTube video's channel
-     */
-    public void setChannelTitle(String channelTitle) {
-        this.channelTitle = channelTitle;
-    }
-
-    /**
-     * Retrieves the date and time the video was published.
-     *
-     * @return the publication Instant of the YouTube video
-     */
-    public Instant getPublishedAt() {
-        return publishedAt;
-    }
-
-    /**
-     * Sets the date and time the video was published.
-     *
-     * @param publishedAt the Instant to set as the publication date and time of the YouTube video
-     */
-    public void setPublishedAt(Instant publishedAt) {
-        this.publishedAt = publishedAt;
-    }
-
-    /**
-     * Retrieves the title of the video.
-     *
-     * @return the title of the YouTube video
+     * @return the title of the video.
      */
     public String getTitle() {
         return title;
     }
 
     /**
-     * Sets the title of the video.
+     * Sets the video title.
      *
-     * @param title the title to set for the YouTube video
+     * @param title the title of the video.
      */
     public void setTitle(String title) {
         this.title = title;
     }
 
     /**
-     * Retrieves the description of the video.
+     * Retrieves the channel ID.
      *
-     * @return the description of the YouTube video
+     * @return the unique ID of the channel to which the video belongs.
+     */
+    public String getChannelId() {
+        return channelId;
+    }
+
+    /**
+     * Sets the channel ID.
+     *
+     * @param channelId the unique ID of the channel to which the video belongs.
+     */
+    public void setChannelId(String channelId) {
+        this.channelId = channelId;
+    }
+
+    /**
+     * Retrieves the channel title.
+     *
+     * @return the title of the channel to which the video belongs.
+     */
+    public String getChannelTitle() {
+        return channelTitle;
+    }
+
+    /**
+     * Sets the channel title.
+     *
+     * @param channelTitle the title of the channel to which the video belongs.
+     */
+    public void setChannelTitle(String channelTitle) {
+        this.channelTitle = channelTitle;
+    }
+
+    /**
+     * Retrieves the video description.
+     *
+     * @return the video's description.
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Sets the description of the video.
+     * Sets the video description.
      *
-     * @param description the description to set for the YouTube video
+     * @param description the description of the video.
      */
     public void setDescription(String description) {
         this.description = description;
     }
 
     /**
-     * Retrieves the number of times the video has been viewed.
+     * Retrieves the video's publication date and time.
      *
-     * @return the view count of the YouTube video
+     * @return the instant the video was published.
+     */
+    public Instant getPublishedAt() {
+        return publishedAt;
+    }
+
+    /**
+     * Sets the video's publication date and time.
+     *
+     * @param publishedAt the date and time the video was published.
+     */
+    public void setPublishedAt(Instant publishedAt) {
+        this.publishedAt = publishedAt;
+    }
+
+    /**
+     * Retrieves the video's view count.
+     *
+     * @return the number of times the video has been viewed.
      */
     public int getViewCount() {
         return viewCount;
     }
 
     /**
-     * Sets the number of times the video has been viewed.
+     * Sets the video's view count.
      *
-     * @param viewCount the number of views to set for the YouTube video
+     * @param viewCount the number of times the video has been viewed.
      */
     public void setViewCount(int viewCount) {
         this.viewCount = viewCount;
+    }
+
+    /**
+     * Returns a formatted string representation of the YouTube video.
+     *
+     * @return a string containing the video's URL, title, channel ID, channel title, description, publication date and time, and view count.
+     */
+    @Override
+    public String toString() {
+        return "URL: https://youtu.be/" + id + "\n" +
+                "Title: " + title + "\n" +
+                "Channel ID: " + channelId + "\n" +
+                "Channel Title: " + channelTitle + "\n" +
+                "Description: " + description + "\n" +
+                "Published At: " + publishedAt + "\n" +
+                "View Count: " + viewCount;
     }
 }

@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="661aaa28-55de-49b8-a8b5-1b11945b4564" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoChannelComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoDateComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoDescriptionComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoViewComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/YouTubeDataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YouTubeDataParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/YouTubeVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YouTubeVideo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697596513200</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Phase 2 Sort Video objects by different features (title, channeltitle, views, date)">
+      <option name="closed" value="true" />
+      <created>1697604877058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697604877058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +146,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Phase 1" />
     <MESSAGE value="Phase 1 Parse a YouTube video data string in into a YouTube video object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phase 1 Parse a YouTube video data string in into a YouTube video object" />
+    <MESSAGE value="Phase 2 Sort Video objects by different features (title, channeltitle, views, date)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase 2 Sort Video objects by different features (title, channeltitle, views, date)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

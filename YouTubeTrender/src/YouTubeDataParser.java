@@ -26,20 +26,21 @@ public class YouTubeDataParser {
 
             for (int i = 0; i < items.size(); i++) {
                 JsonObject video = items.getJsonObject(i);
+                String id = video.getString("id");
 
                 // Extract video details from the JSON object
                 JsonObject snippet = video.getJsonObject("snippet");
+                String title = snippet.getString("title");
                 String channelId = snippet.getString("channelId");
                 String channelTitle = snippet.getString("channelTitle");
-                Instant publishedAt = Instant.parse(snippet.getString("publishedAt"));
-                String title = snippet.getString("title");
                 String description = snippet.getString("description");
+                Instant publishedAt = Instant.parse(snippet.getString("publishedAt"));
 
                 // Extract video statistics from the JSON object
                 JsonObject statistics = video.getJsonObject("statistics");
                 int viewCount = Integer.parseInt(statistics.getString("viewCount"));
 
-                YouTubeVideo youTubeVideo = new YouTubeVideo(channelId, channelTitle, publishedAt, title, description, viewCount);
+                YouTubeVideo youTubeVideo = new YouTubeVideo(id, title, channelId, channelTitle, description, publishedAt, viewCount);
                 youTubeVideoList.add(youTubeVideo);
             }
 
