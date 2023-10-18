@@ -5,34 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="661aaa28-55de-49b8-a8b5-1b11945b4564" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/glassfish_javax_json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.json-1.1.4-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.10.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.10.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.3.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/YouTubeDataParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/YouTubeDataParserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/YouTubeVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_json_1_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoChannelComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoDateComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoDescriptionComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/YouTubeVideoViewComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YouTubeTrender.iml" beforeDir="false" afterPath="$PROJECT_DIR$/YouTubeTrender.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/YouTubeTrender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YouTubeTrender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,10 +123,24 @@
       <workItem from="1693556591016" duration="2319000" />
       <workItem from="1693558955625" duration="685000" />
     </task>
+    <task id="LOCAL-00001" summary="Phase 1 Parse a YouTube video data string in into a YouTube video object">
+      <option name="closed" value="true" />
+      <created>1697596513200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697596513200</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Phase 1" />
+    <MESSAGE value="Phase 1 Parse a YouTube video data string in into a YouTube video object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Phase 1 Parse a YouTube video data string in into a YouTube video object" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
