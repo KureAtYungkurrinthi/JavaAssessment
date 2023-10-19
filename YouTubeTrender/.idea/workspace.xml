@@ -7,7 +7,6 @@
     <list default="true" id="661aaa28-55de-49b8-a8b5-1b11945b4564" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/YouTubeTrender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YouTubeTrender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/YouTubeVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/YouTubeVideo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697639343232</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add main menu">
+      <option name="closed" value="true" />
+      <created>1697644862613</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697644862613</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +172,9 @@
     <MESSAGE value="Phase 2 Sort Video objects by different features (title, channeltitle, views, date)" />
     <MESSAGE value="Add toString to YouTubeVideo object" />
     <MESSAGE value="Phase 3 Index the list of videos for word usage, aka &quot;Trending Topics&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phase 3 Index the list of videos for word usage, aka &quot;Trending Topics&quot;" />
+    <MESSAGE value="Add main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add main menu" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

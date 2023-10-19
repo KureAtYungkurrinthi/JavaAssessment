@@ -25,10 +25,8 @@ public class YouTubeTrender {
             boolean waitingForInput = true;
             while (waitingForInput) {
                 try {
-                    System.out.println();
                     System.out.print("Please select [1-6]: ");
                     int choice = scanner.nextInt();
-                    scanner.nextLine();
                     switch (choice) {
                         case 1 -> {
                         }
@@ -41,10 +39,12 @@ public class YouTubeTrender {
                     }
                     System.out.println();
                     System.out.println(list.get(0));
+                    System.out.println();
                 } catch (InputMismatchException e) {
-                    System.out.println("Please enter a valid number.");
+                    System.out.print("Please enter a valid number! ");
+                    scanner.nextLine();  // Clear the invalid input from the stream.
                 } catch (IndexOutOfBoundsException e) {
-                    System.out.println("The list is empty or the index is out of bounds.");
+                    System.out.print("Index is out of bounds! ");
                 } catch (TerminateMenuException e) {
                     System.out.println("Goodbye!");
                     waitingForInput = false;
