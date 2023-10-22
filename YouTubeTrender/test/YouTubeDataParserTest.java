@@ -3,28 +3,44 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * @author Carl
- */
 public class YouTubeDataParserTest {
+    YouTubeDataParser instance = new YouTubeDataParser();
 
-
-    /**
-     * Test of parse method, of class YouTubeDataParser.
-     */
-    @DisplayName("Testing the parse method")
     @Test
-    public void testParse() {
-        String fileName = "";
-        YouTubeDataParser instance = new YouTubeDataParser();
-        List<YouTubeVideo> expResult = null;
-        List<YouTubeVideo> result = instance.parse(fileName);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    @DisplayName("Test parse method with single video data")
+    void testParseSingleVideo() {
+        String filename = "data/youtubedata.json";
+        try {
+            List<YouTubeVideo> result = instance.parse(filename);
+            assertNotNull(result, "Video list should not be null");
+            assertEquals(1, result.size(), "Video list should contain one video");
+            assertEquals("XGM6sHIJuho", result.get(0).getId(), "Contain wrong video");
+        } catch (YouTubeDataParserException e) {
+            fail("Parsing failed: " + e.getMessage());
+        }
     }
 
+    @Test
+    @DisplayName("Test parse method with multiple video data")
+    void testParseMultipleVideos() {
+        String filename = "data/youtubedata_15_50.json";
+        try {
+            List<YouTubeVideo> result = instance.parse(filename);
+            assertNotNull(result, "Video list should not be null");
+            assertEquals(50, result.size(), "Video list should contain 50 videos");
+            assertEquals("XGM6sHIJuho", result.get(0).getId(), "Wrong first video");
+            assertEquals("3H7tebD75pM", result.get(result.size() - 1).getId(), "Wrong last video");
+        } catch (YouTubeDataParserException e) {
+            fail("Parsing failed: " + e.getMessage());
+        }
+    }
+
+    @Test
+    @DisplayName("Test parse method with malformed JSON")
+    void testParseMalformedJSON() {
+        String filename = "data/youtubedata_malformed.json";
+        assertThrows(YouTubeDataParserException.class, () -> instance.parse(filename), "Expected YouTubeDataParserException");
+    }
 }
