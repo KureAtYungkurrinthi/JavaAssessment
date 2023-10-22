@@ -22,7 +22,7 @@ public class YouTubeWordItemTest {
 
     @Test
     @DisplayName("Add YouTubeVideo to YouTubeWordItem")
-    void add() {
+    void testAdd() {
         // Before adding any videos
         assertEquals(0, wordItem.getCount(), "Initial count should be 0");
         assertTrue(wordItem.getPosts().isEmpty(), "Initial set of videos should be empty");
@@ -41,7 +41,7 @@ public class YouTubeWordItemTest {
 
     @Test
     @DisplayName("Get Count of Word Occurrences")
-    void getCount() {
+    void testGetCount() {
         assertEquals(0, wordItem.getCount(), "Initial count should be 0");
         wordItem.add(video1);
         assertEquals(1, wordItem.getCount(), "Count should be 1 after adding a video");
@@ -49,7 +49,7 @@ public class YouTubeWordItemTest {
 
     @Test
     @DisplayName("Get Posts Where Word Appears")
-    void getPosts() {
+    void testGetPosts() {
         Set<YouTubeVideo> posts = wordItem.getPosts();
         assertTrue(posts.isEmpty(), "Initial set of videos should be empty");
         wordItem.add(video1);
@@ -60,7 +60,7 @@ public class YouTubeWordItemTest {
 
     @Test
     @DisplayName("Compare Two YouTubeWordItems")
-    void compareTo() {
+    void testCompareTo() {
         YouTubeWordItem anotherWordItem = new YouTubeWordItem("another");
 
         // Same count
