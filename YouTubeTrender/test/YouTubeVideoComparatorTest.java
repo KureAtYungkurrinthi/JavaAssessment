@@ -9,10 +9,10 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class YouTubeVideoComparatorTest {
-    List<YouTubeVideo> videos;
-    YouTubeVideo video1;
-    YouTubeVideo video2;
-    YouTubeVideo video3;
+    private List<YouTubeVideo> videos;
+    private YouTubeVideo video1;
+    private YouTubeVideo video2;
+    private YouTubeVideo video3;
 
     @BeforeEach
     void setUp() {

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="661aaa28-55de-49b8-a8b5-1b11945b4564" name="Default Changelist" comment="YouTubeWordItemTest">
-      <change afterPath="$PROJECT_DIR$/test/YouTubeVideoComparatorTest.java" afterDir="false" />
+    <list default="true" id="661aaa28-55de-49b8-a8b5-1b11945b4564" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/YouTubeVideoIndexerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/YouTubeDataParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/YouTubeDataParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/YouTubeVideoComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/YouTubeVideoComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/YouTubeWordItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/YouTubeWordItemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697997889563</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="YouTubeVideoComparatorTest">
+      <option name="closed" value="true" />
+      <created>1697999583304</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697999583304</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +229,8 @@
     <MESSAGE value="CLI application done" />
     <MESSAGE value="YouTubeDataParserTest" />
     <MESSAGE value="YouTubeWordItemTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="YouTubeWordItemTest" />
+    <MESSAGE value="YouTubeVideoComparatorTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="YouTubeVideoComparatorTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class YouTubeWordItemTest {
-    YouTubeWordItem wordItem;
-    YouTubeVideo video1;
-    YouTubeVideo video2;
+    private YouTubeWordItem wordItem;
+    private YouTubeVideo video1;
+    private YouTubeVideo video2;
 
     @BeforeEach
     void setUp() {

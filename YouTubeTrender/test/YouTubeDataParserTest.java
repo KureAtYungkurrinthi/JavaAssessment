@@ -6,7 +6,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class YouTubeDataParserTest {
-    YouTubeDataParser instance = new YouTubeDataParser();
+    private final YouTubeDataParser instance = new YouTubeDataParser();
 
     @Test
     @DisplayName("Test parse method with single video data")
