@@ -64,7 +64,7 @@ public class YouTubeWordItem implements Comparable<YouTubeWordItem> {
      */
     @Override
     public String toString() {
-        return "Word: " + word + ", Occurrence: " + count + ", Videos: " + videos.size();
+        return "Word: " + word + ", Occurrence: " + count + ", Videos: " + videos.size() + "\n";
     }
 
     /**
