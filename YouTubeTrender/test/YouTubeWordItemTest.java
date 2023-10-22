@@ -16,8 +16,8 @@ public class YouTubeWordItemTest {
     @BeforeEach
     void setUp() {
         wordItem = new YouTubeWordItem("test");
-        video1 = new YouTubeVideo("AA", "title 1", "channelId1", "Channel Title 1", "Description test 1", Instant.parse("2011-11-11T11:11:11Z"), 1111);
-        video2 = new YouTubeVideo("BB", "title 2", "channelId2", "Channel Title 2", "Description test 2", Instant.parse("2022-12-22T22:22:22Z"), 2222);
+        video1 = new YouTubeVideo("AA", "title 1", "channelId1", "Channel Title 1", "Description test 1", Instant.now(), 1111);
+        video2 = new YouTubeVideo("BB", "title 2", "channelId2", "Channel Title 2", "Description test 2", Instant.now(), 2222);
     }
 
     @Test

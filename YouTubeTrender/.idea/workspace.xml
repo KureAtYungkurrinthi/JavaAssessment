@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="661aaa28-55de-49b8-a8b5-1b11945b4564" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/YouTubeWordItemTest.java" afterDir="false" />
+    <list default="true" id="661aaa28-55de-49b8-a8b5-1b11945b4564" name="Default Changelist" comment="YouTubeWordItemTest">
+      <change afterPath="$PROJECT_DIR$/test/YouTubeVideoComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/YouTubeWordItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/YouTubeWordItemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697996130040</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="YouTubeWordItemTest">
+      <option name="closed" value="true" />
+      <created>1697997889563</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697997889563</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +218,8 @@
     <MESSAGE value="extending menu" />
     <MESSAGE value="CLI application done" />
     <MESSAGE value="YouTubeDataParserTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="YouTubeDataParserTest" />
+    <MESSAGE value="YouTubeWordItemTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="YouTubeWordItemTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
