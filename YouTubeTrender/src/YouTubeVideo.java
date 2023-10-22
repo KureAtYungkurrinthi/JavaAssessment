@@ -172,6 +172,6 @@ public class YouTubeVideo {
                 "Channel Title: " + channelTitle + "\n" +
                 "Description: " + description.replace("\n", " ") + "\n" +
                 "Published At: " + publishedAt + "\n" +
-                "View Count: " + viewCount;
+                "View Count: " + viewCount + "\n";
     }
 }
